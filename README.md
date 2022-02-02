@@ -1,14 +1,113 @@
-### game1-四子棋遊戲
+# Easy-Games
+Design and implement several games using C++.
 
+## Gobang
+### Usage
+* Start the game
 
-### game2-踩地雷遊戲
+```
+Now the game start!!!
+We got two player!!!
 
-game2因為是最近才做的所以還沒有防呆
+The disc type:
+Player1: R
+Player2: Y
 
-### maze-自製走迷宮
+Enter any button to start the game!!!
+```
+* Try to get a line(4 disc) to win the game!!!
+```
+Player2(Y) turn
+---------------
+This is the board now!!!
+      0 1 2 3 4 5 6
+     ---------------
+  0  ||||||||
+  1  ||||||||
+  2  ||||||||
+  3  ||||||||
+  4  |||||R|Y||
+  5  |R|Y|||Y|R|R|
+     ---------------
 
-利用物件導向的程式設計以及BFS的方式製作一個可以自己走迷宮的程式。
+Please enter which column you what to put your disc in: 6
 
-使用方式：迷宮樣本已經存成txt檔，共四個。執行主程式後輸入檔案名稱只需輸入數字1~4，會自動幫你開啟maze?.txt的迷宮樣本，?為所輸入數字。
+---------------
+You chose column: 6
+Please check the chessboard now.
+      0 1 2 3 4 5 6
+     ---------------
+  0  ||||||||
+  1  ||||||||
+  2  ||||||||
+  3  ||||||||
+  4  |||||R|Y|Y|
+  5  |R|Y|||Y|R|R|
+     ---------------
 
-輸出結果：會輸出迷宮的地圖，以及到達終點的最短路徑，最短路進用"X"表示。
+Enter any button to conti the game!!!
+```
+
+## KMines
+### Usage
+* Choose the width, length, and numbers of boombs.
+```
+Hellow welcome to the game!!!
+
+Please choose the width:10
+Please choose the length:10
+Please choose how many boombs:15
+```
+* Choose the save place until there is no more save place, and you will win the game.
+```
+Choose a row:4
+Choose a column:5
+Your choose:(4,5)
+
+There is no boomb nearby!
+
+Please check the map now.
+////////////////////////
+// ? ? 1空空空空空空空//
+// ? ? 1空空空 1 1 1空//
+// 1 1 1空空空 1 ? 1空//
+//空空空空空 1 2 2 1空//
+//空空空空空 1 ? 1空空//
+//空空 1 2 2 2 ? 2 1空//
+//空空 1 ? ? ? ? ? 1空//
+//空空 1 ? ? 1 1 1 1空//
+//空 1 1 ? 1 1空空空空//
+//空 1 ? ? ? 1空空空空//
+////////////////////////
+
+Choose a row:
+```
+
+## Maze
+Develop a game to escape from the maze based on Breadth-First Search(BFS), using object-oriented programming(OOP).
+
+### Usage
+* Input the number between 1 to 4.
+
+```
+Please input the file number: 
+```
+
+* You will get the shortest path showing by "X". 
+
+```
+Please input the file number: 1
+
+// // // // // // // // // // // //
+// 起 路 路 路 路 路 路 路 路 路 //
+//  X // // // // // // // // 路 //
+//  X  X // 路 路 路 路 路 路 路 //
+// //  X // // // // 路 // // // //
+// 路  X  X  X  X 路 路 路 路 路 //
+// 路 // // //  X // // // // 路 //
+// 路 // 路 //  X 路 路 路 路 路 //
+// 路 路 路 //  X // // // // // //
+// 路 // 路 //  X //  X  X  X 路 //
+// 路 // 路 //  X  X  X //  X 終 //
+// // // // // // // // // // // //
+```
